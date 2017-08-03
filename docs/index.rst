@@ -1,4 +1,4 @@
-Welcome to Under The Sea's documentation!
+Welcome to Distill's documentation!
 ======================================
 
 Contents:

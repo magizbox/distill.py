@@ -11,8 +11,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'Click>=6.0',
-    'python-crfsuite==0.9.1'
+    'Click>=6.0'
 ]
 
 test_requirements = [
@@ -20,20 +19,20 @@ test_requirements = [
 ]
 
 setup(
-    name='underthesea',
-    version='1.1.1',
-    description="Vietnamese NLP Toolkit",
+    name='distill.py',
+    version='0.0.1',
+    description="Doc platform for coder.",
     long_description=readme + '\n\n' + history,
     author="Vu Anh",
     author_email='brother.rain.1024@gmail.com',
-    url='https://github.com/magizbox/underthesea',
+    url='https://github.com/magizbox/distill.py',
     packages=[
-        'underthesea',
+        'distill.py',
     ],
-    package_dir={'underthesea': 'underthesea'},
+    package_dir={'distill': 'distill'},
     entry_points={
         'console_scripts': [
-            'underthesea=underthesea.cli:main'
+            'distill=distill.cli:main'
         ]
     },
     include_package_data=True,
@@ -46,7 +45,6 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Natural Language :: English',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.4',
     ],
     test_suite='tests',
