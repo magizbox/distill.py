@@ -27,7 +27,7 @@ setup(
     author_email='brother.rain.1024@gmail.com',
     url='https://github.com/magizbox/distill.py',
     packages=[
-        'distill.py',
+        'distill',
     ],
     package_dir={'distill': 'distill'},
     entry_points={
