@@ -20,7 +20,7 @@ test_requirements = [
 
 setup(
     name='distill.py',
-    version='0.0.3',
+    version='0.0.4',
     description="Doc platform for coder.",
     long_description=readme + '\n\n' + history,
     author="Vu Anh",
