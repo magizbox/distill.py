@@ -11,7 +11,9 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'Click>=6.0'
+    'Click>=6.0',
+    'Jinja2>=2.7.1',
+    'livereload>=2.5.1'
 ]
 
 test_requirements = [
@@ -20,7 +22,7 @@ test_requirements = [
 
 setup(
     name='distill.py',
-    version='0.0.4',
+    version='0.0.5',
     description="Doc platform for coder.",
     long_description=readme + '\n\n' + history,
     author="Vu Anh",

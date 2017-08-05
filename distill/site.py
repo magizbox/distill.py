@@ -1,4 +1,7 @@
 from collections import ChainMap
+from os import getcwd
+from os.path import join
+
 import yaml
 from distill.config import *
 
@@ -38,7 +41,7 @@ class PageFactory:
 
 
 def load_site():
-    with open(join(cwd, "distill.yml"), "r") as f:
+    with open(join(getcwd(), "distill.yml"), "r") as f:
         site = yaml.load(f)
         site["pages"] = [PageFactory.create(data) for data in site["pages"]]
         return site
