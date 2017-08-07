@@ -66,7 +66,7 @@ def _render_template(temp_site_folder, site_folder):
 
 
 def _copy_static_folders(doc_folder, site_folder):
-    static_folders = [f for f in os.listdir(doc_folder) if os.path.isdir(f)]
+    static_folders = [f for f in os.listdir(doc_folder) if os.path.isdir(join(doc_folder, f))]
     for f in static_folders:
         try:
             shutil.copytree(join(doc_folder, f), join(site_folder, f))

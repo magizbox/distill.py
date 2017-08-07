@@ -1,9 +1,7 @@
 from collections import ChainMap
 from os import getcwd
 from os.path import join
-
 import yaml
-from distill.config import *
 
 class Page:
     def __init__(self, properties):
